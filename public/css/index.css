@@ -108,7 +108,7 @@ nav {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   nav {
     padding: 0.3rem 1rem;
     text-align: center;
