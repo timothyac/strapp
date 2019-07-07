@@ -1,6 +1,6 @@
-var stripe = Stripe("pk_test_B5sJrURqTEMFyyZUMHjuH3qq00AKN6tYCp");
+const stripe = Stripe("pk_test_B5sJrURqTEMFyyZUMHjuH3qq00AKN6tYCp");
 
-var checkoutButton = document.getElementById(
+const checkoutButton = document.getElementById(
   "checkout-button-sku_FO6OhlYrLbLeqn"
 );
 checkoutButton.addEventListener("click", function() {
@@ -15,6 +15,7 @@ checkoutButton.addEventListener("click", function() {
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
+
       successUrl: "https://your-website.com/success",
       cancelUrl: "https://your-website.com/canceled"
     })
@@ -22,7 +23,7 @@ checkoutButton.addEventListener("click", function() {
       if (result.error) {
         // If `redirectToCheckout` fails due to a browser or network
         // error, display the localized error message to your customer.
-        var displayError = document.getElementById("error-message");
+        let displayError = document.getElementById("error-message");
         displayError.textContent = result.error.message;
       }
     });
