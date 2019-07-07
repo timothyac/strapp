@@ -16,8 +16,8 @@ checkoutButton.addEventListener("click", function() {
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
 
-      successUrl: "https://your-website.com/success",
-      cancelUrl: "https://your-website.com/canceled"
+      successUrl: "https://strapp-app.herokuapp.com/success",
+      cancelUrl: "https://strapp-app.herokuapp.com/canceled"
     })
     .then(function(result) {
       if (result.error) {
