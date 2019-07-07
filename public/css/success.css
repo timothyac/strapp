@@ -1,3 +1,31 @@
 #success {
+  text-align: center;
+  font-weight: 700;
+}
+
+#success h1 {
   color: #55af65;
+  font-size: 8rem;
+}
+
+#success p {
+  margin: auto auto;
+  width: 30rem;
+}
+
+#success p a {
+  text-decoration: none;
+}
+
+@media (max-width: 420px) {
+  #success h1 {
+    margin-top: 5rem;
+    color: #55af65;
+    font-size: 4rem;
+  }
+
+  #success p {
+    margin: auto auto;
+    width: 20rem;
+  }
 }
