@@ -9,7 +9,12 @@ app.use(express.static(`${__dirname}/public`));
 
 // Send index.html on req
 app.get("/", (req, res) => {
-  res.send(`${__dirname}/public/index.html`);
+  res.sendFile(`${__dirname}/public/index.html`);
+});
+
+// Send failure.html on req
+app.get("/success", (req, res) => {
+  res.sendFile(`${__dirname}/public/success.html`);
 });
 
 // Start server on port
