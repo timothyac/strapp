@@ -4,7 +4,6 @@ var checkoutButton = document.getElementById(
   "checkout-button-sku_FO6OhlYrLbLeqn"
 );
 checkoutButton.addEventListener("click", function() {
-  console.log("Clicked");
   // When the customer clicks on the button, redirect
   // them to Checkout.
   stripe
