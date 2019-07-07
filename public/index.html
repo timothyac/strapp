@@ -13,18 +13,35 @@
       <h1>STRAPP</h1>
     </nav>
     <!-- Content -->
-    <section id="content"></section>
-    <!-- Checkout -->
-    <section id="checkout">
-      <button
-        style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-        id="checkout-button-sku_FO6OhlYrLbLeqn"
-        role="link"
-      >
-        Checkout
-      </button>
-      <div id="error-message"></div>
+    <section id="content">
+      <div id="img">
+        <img src="./imgs/mockup.png" alt="mockup" id="mockup" />
+      </div>
+      <div id="text">
+        <h1>
+          Pre-boiled
+        </h1>
+        <p>
+          Strapp is a boilerplate for people looking to use the new Stripe
+          Checkout feature which offers a <strong>quick</strong> and
+          <strong>PCI-compliant</strong>
+          way to sell things online. All the code can be found in the repository
+          below, as well as a live demo for the checkout!
+        </p>
+        <div id="buttons">
+          <button id="checkout-button-sku_FO6OhlYrLbLeqn" role="link">
+            Checkout
+          </button>
+
+          <button id="source">
+            Source Code
+          </button>
+        </div>
+        <div id="error-message"></div>
+      </div>
     </section>
+    <!-- Checkout -->
+    <section id="checkout"></section>
     <script src="https://js.stripe.com/v3"></script>
     <script src="./stripe.js"></script>
   </body>
